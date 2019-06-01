@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NutritionistLoginActivity">
+
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="185dp"
+        android:text="@string/user_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/n_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="111dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="111dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page_title" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="95dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/Login"
+        app:layout_constraintBottom_toTopOf="@+id/signup_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/n_password" />
+
+    <TextView
+        android:id="@+id/signup_tv"
+        android:layout_width="164dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginBottom="137dp"
+        android:text="@string/create_new_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+
+    <TextView
+        android:id="@+id/nutri_gateway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Continue as User?"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/signup_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+</android.support.constraint.ConstraintLayout>

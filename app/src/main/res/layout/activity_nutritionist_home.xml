@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/nut_drawerlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NutritionistHomeActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/nut_home_const_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/mytoolbar"
+            layout="@layout/mytoolbar"
+            app:layout_constraintStart_toStartOf="@+id/nut_home_const_layout"
+            app:layout_constraintEnd_toEndOf="@+id/nut_home_const_layout"
+            app:layout_constraintTop_toTopOf="@+id/nut_home_const_layout"/>
+
+
+        <!--<Button-->
+            <!--android:id="@+id/goto_nut_profile"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/profile"-->
+            <!--app:layout_constraintStart_toStartOf="@id/nut_home_const_layout"-->
+            <!--app:layout_constraintEnd_toEndOf="@id/nut_home_const_layout"-->
+            <!--app:layout_constraintBottom_toBottomOf="@id/nut_home_const_layout"/>-->
+
+        <!--<android.support.design.widget.TabLayout-->
+            <!--android:id="@+id/tablayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="@android:color/holo_green_dark"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/nut_home_const_layout"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/nut_home_const_layout"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/mytoolbar">-->
+
+        <!--</android.support.design.widget.TabLayout>-->
+
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/viewpager"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/nut_home_const_layout"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/nut_home_const_layout"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/tablayout">-->
+
+        <!--</android.support.v4.view.ViewPager>-->
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:id="@+id/naview"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nut_header"
+        app:menu="@menu/nut_menu">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

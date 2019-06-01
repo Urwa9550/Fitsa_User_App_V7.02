@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "370591267285",
+    "firebase_url": "https://fitsauserapp.firebaseio.com",
+    "project_id": "fitsauserapp",
+    "storage_bucket": "fitsauserapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370591267285:android:ea83af2a8429914c",
+        "android_client_info": {
+          "package_name": "com.wasisoft.fitsa_user_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370591267285-de26espbngdgaojtnehc33pk2gbgh2ck.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wasisoft.fitsa_user_app",
+            "certificate_hash": "ed443268de5da7b64e1d38becace3c3017cb8e19"
+          }
+        },
+        {
+          "client_id": "370591267285-50k20h8pmj4cf8c9oe17m1ls1thm98dl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wasisoft.fitsa_user_app",
+            "certificate_hash": "c5f3d090a55519fb060b492d72c739ebb8e760f5"
+          }
+        },
+        {
+          "client_id": "370591267285-stlqjcocn9nhvu0v078effm9bft6n24p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC28KuyL7mmkf15DOr2tuiTjNWnc9CUkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370591267285-stlqjcocn9nhvu0v078effm9bft6n24p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NutritionistProfile">
+
+
+
+
+        <!--<include-->
+            <!--android:id="@+id/mytoolbar"-->
+            <!--layout="@layout/mytoolbar"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/nut_home_const_layout"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/nut_home_const_layout"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/nut_home_const_layout"/>-->
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441"
+        tools:layout_editor_absoluteX="0dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/nutri_pic"
+            android:layout_width="127dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="148dp"
+            android:layout_marginBottom="30dp"
+            android:background="#c5cae9"
+            android:src="@drawable/defaultprofile"
+            />
+
+        <EditText
+            android:id="@+id/nutri_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_hint"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/nutri_qlf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/qualification_hint"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/nutri_exp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/experience_hint"
+            android:layout_marginBottom="20dp"
+            />
+
+        <EditText
+            android:id="@+id/nutri_inst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/institute_hint"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:text="@string/nutri_update_profile_btn"
+            android:id="@+id/nutri_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="145dp"/>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

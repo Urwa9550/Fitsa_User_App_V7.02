@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="main_menu_2">#673AB7</color>
+    <color name="main_menu">#c32e</color>
+    <color name="nutri_itemview">#234567</color>
+
+
+</resources>

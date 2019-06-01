@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--trainer and nutritionists details layout for user-->
+    <TextView
+        android:id="@+id/study6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/rating"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/study4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/study4"
+        app:layout_constraintTop_toBottomOf="@+id/study4" />
+
+    <TextView
+        android:id="@+id/study7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/rating"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/study5"
+        app:layout_constraintStart_toStartOf="@+id/study5"
+        app:layout_constraintTop_toBottomOf="@+id/study5" />
+
+    <TextView
+        android:id="@+id/study"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/nutritionist"
+
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/f_name_tr_nu"
+        app:layout_constraintStart_toStartOf="@id/f_name_tr_nu"
+        app:layout_constraintTop_toBottomOf="@+id/f_name_tr_nu" />
+
+    <TextView
+        android:id="@+id/study2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/institute"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/study1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/study1"
+        app:layout_constraintTop_toBottomOf="@+id/study1" />
+
+    <TextView
+        android:id="@+id/study3"
+        android:layout_width="134dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/abc_university"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/study"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="@+id/study"
+        app:layout_constraintTop_toBottomOf="@+id/study" />
+
+    <include
+        android:id="@+id/toolbar_tr_nu"
+        layout="@layout/toolbar"
+
+        />
+
+
+    <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+    <!--android:id="@+id/circularImageView"-->
+    <!--android:layout_width="250dp"-->
+    <!--android:layout_height="250dp"-->
+    <!--android:layout_marginStart="72dp"-->
+    <!--android:layout_marginTop="19dp"-->
+    <!--android:layout_marginEnd="89dp"-->
+    <!--android:src="@drawable/owl"-->
+    <!--app:civ_border_color="#EEEEEE"-->
+    <!--app:civ_border_width="4dp"-->
+    <!--app:civ_shadow="true"-->
+    <!--app:civ_shadow_color="#8BC34A"-->
+    <!--app:civ_shadow_radius="10"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/toolbar" />-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circularImageView"
+        android:layout_width="127dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/owl"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_tr_nu"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/name_tr_nu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/name"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/f_name_tr_nu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mr_fitsa"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toEndOf="@+id/name_tr_nu"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+
+    <TextView
+        android:id="@+id/study1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:text="@string/study1"
+        android:textSize="16sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/study2"
+        app:layout_constraintEnd_toEndOf="@+id/name_tr_nu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name_tr_nu"
+        app:layout_constraintTop_toBottomOf="@+id/name_tr_nu" />
+
+    <TextView
+        android:id="@+id/study4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/experience"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/study2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/study2"
+        app:layout_constraintTop_toBottomOf="@+id/study2" />
+
+    <TextView
+        android:id="@+id/study5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/_3_years"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/study3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/study3"
+        app:layout_constraintTop_toBottomOf="@+id/study3" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="126dp"
+        android:text="@string/subscribe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circularImageView" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="248dp" />
+
+</android.support.constraint.ConstraintLayout>
